@@ -13,3 +13,9 @@ The objective of this project is to understand how web servers handle client req
 - Implements multi-threading to handle multiple clients concurrently
 - Uses thread pool for efficient thread management
 - Demonstrates basic networking and concurrency concepts in Java
+
+  ## 🛠️ Tech Stack
+- Java (Core Java, Multithreading)
+- Socket Programming
+- Apache JMeter (for performance testing)
+- IntelliJ IDEA (IDE)
