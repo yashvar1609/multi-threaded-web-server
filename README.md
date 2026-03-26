@@ -21,6 +21,6 @@ The objective of this project is to understand how web servers handle client req
 - IntelliJ IDEA (IDE)
 
 ## 📂 Project Structure
-SingleThreaded/
-MultiThreaded/
-MultiThreadedUsingThreadPool/
+- SingleThreaded/
+- MultiThreaded/
+- MultiThreadedUsingThreadPool/
