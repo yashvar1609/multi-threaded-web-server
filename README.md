@@ -50,3 +50,6 @@ Performance testing was conducted using Apache JMeter under two conditions:
 - Thread pool-based server provides better resource management and more stable performance under load
 
 Some errors/timeouts were observed in the single-threaded implementation under higher load conditions.
+
+## 📸 Performance Comparison
+### 🔹 Single Threaded
