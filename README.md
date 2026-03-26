@@ -19,3 +19,8 @@ The objective of this project is to understand how web servers handle client req
 - Socket Programming
 - Apache JMeter (for performance testing)
 - IntelliJ IDEA (IDE)
+
+## 📂 Project Structure
+SingleThreaded/
+MultiThreaded/
+MultiThreadedUsingThreadPool/
