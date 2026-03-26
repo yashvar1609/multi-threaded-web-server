@@ -37,3 +37,16 @@ The objective of this project is to understand how web servers handle client req
 ### 3. Run Client
 - java Client
 #### Note : Run the server first, then run the client in a separate terminal.
+
+## 📊 Performance Testing
+
+Performance testing was conducted using Apache JMeter under two conditions:
+- Without delay (high load)
+- With delay (controlled load)
+
+### 🔹 Observations
+- Single-threaded server handles one request at a time, which can lead to increased response time and occasional timeouts under load
+- Multi-threaded server processes multiple requests concurrently, improving response time
+- Thread pool-based server provides better resource management and more stable performance under load
+
+Some errors/timeouts were observed in the single-threaded implementation under higher load conditions.
