@@ -80,3 +80,15 @@ The single-threaded server processes one request at a time. When delay is introd
 | Throughput         | Better              | Reduced                |
 | Errors/Timeouts    | Minimal             | May Occur              |
 | Overall Performance| Acceptable          | Poor under load        |
+
+### 🔹 Multi Threaded (Without Thread Pool)
+
+#### Without Delay
+![Aggregate Report](https://github.com/yashvar1609/multi-threaded-web-server/blob/main/screenshots/multi-threaded/report-multi-threaded.png)
+*Aggregate Report – Multi Threaded (Without Thread Pool)*
+
+![Graph](https://github.com/yashvar1609/multi-threaded-web-server/blob/main/screenshots/multi-threaded/graph-multi-threaded.png)
+*Response Time Graph – Multi Threaded (Without Thread Pool)*
+
+📌 Observation:
+The multi-threaded server handles multiple client requests concurrently, significantly improving response time and throughput compared to the single-threaded implementation.
