@@ -92,3 +92,15 @@ The single-threaded server processes one request at a time. When delay is introd
 
 📌 Observation:
 The multi-threaded server handles multiple client requests concurrently, significantly improving response time and throughput compared to the single-threaded implementation.
+
+### 🔹 Thread Pool Based Server
+
+#### Without Delay
+![Aggregate Report](https://github.com/yashvar1609/multi-threaded-web-server/blob/main/screenshots/multi-threaded-with-thread-pool/report-thread-pool.png)
+*Aggregate Report – Thread Pool Based Server*
+
+![Graph](https://github.com/yashvar1609/multi-threaded-web-server/blob/main/screenshots/multi-threaded-with-thread-pool/graphj-thread-pool.png)
+*Response Time Graph – Thread Pool Based Server*
+
+📌 Observation:
+The thread pool-based server efficiently manages a fixed number of threads, reducing overhead from frequent thread creation. This results in stable performance and better resource utilization under concurrent requests.
