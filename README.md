@@ -71,15 +71,29 @@ Some errors/timeouts were observed in the single-threaded implementation under h
 📌 Observation:
 The single-threaded server processes one request at a time. When delay is introduced, response time increases significantly and may lead to timeouts under load.
 
-#### 📊 Single Threaded Performance Comparison
+#### 📊 Single Threaded (Easy Comparison)
 
-| Metric              | Without Delay        | With Delay              |
-|--------------------|--------------------|------------------------|
-| Request Handling   | Sequential          | Sequential             |
-| Response Time      | Lower               | Significantly Higher   |
-| Throughput         | Better              | Reduced                |
-| Errors/Timeouts    | Minimal             | May Occur              |
-| Overall Performance| Acceptable          | Poor under load        |
+| Metric            | Without Delay (Fast Case)        | With Delay (Slow Case)          |
+|------------------|----------------------------------|---------------------------------|
+| Average Time     | ~1 ms (very fast ⚡)              | ~39768 ms (very slow 🐢)        |
+| Median Time      | ~1 ms                            | ~3008 ms                        |
+| Throughput       | ~6066 requests/min (very high)   | ~39 requests/min (very low)     |
+| Errors           | 0% (no errors ✅)                | ~49% errors ❌                  |
+| Deviation        | 0 (stable)                       | ~50153 (very unstable)          |
+| Graph Behavior   | Smooth and flat                  | Large spikes and irregular      |
+| Overall Result   | Excellent performance            | Very poor performance           |
+
+📌 Simple Explanation:
+
+Without delay, the server works very fast because each request is processed quickly. 
+Response time is very low, throughput is high, and there are no errors.
+
+With delay, each request takes more time, and since the server handles only one request at a time, all other requests have to wait. 
+This causes very high response time, low throughput, and many errors.
+
+In simple terms:
+👉 Single-threaded server = works fine for small load  
+👉 Fails badly when requests take longer time (delay)
 
 ### 🔹 Multi Threaded (Without Thread Pool)
 
