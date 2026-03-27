@@ -53,3 +53,20 @@ Some errors/timeouts were observed in the single-threaded implementation under h
 
 ## 📸 Performance Comparison
 ### 🔹 Single Threaded
+
+#### Without Delay
+![Aggregate Report](https://github.com/yashvar1609/multi-threaded-web-server/blob/main/screenshots/single-threaded/no-delay-aggregate.png)
+*Aggregate Report – Single Threaded (Without Delay)*
+
+![Graph](https://github.com/yashvar1609/multi-threaded-web-server/blob/main/screenshots/single-threaded/no-delay-graph.png)
+*Response Time Graph – Single Threaded (Without Delay)*
+
+#### With Delay
+![Aggregate Report](https://github.com/yashvar1609/multi-threaded-web-server/blob/main/screenshots/single-threaded/delay-aggregate.png)
+*Aggregate Report – Single Threaded (With Delay)*
+
+![Graph](https://github.com/yashvar1609/multi-threaded-web-server/commit/eb5a5c1d3eef46589531821bac7bda38a99eb58e)
+*Response Time Graph – Single Threaded (With Delay)*
+
+📌 Observation:
+The single-threaded server processes one request at a time. When delay is introduced, response time increases significantly and may lead to timeouts under load.
