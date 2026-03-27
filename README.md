@@ -122,4 +122,21 @@ The thread pool-based server efficiently manages a fixed number of threads, redu
 - In contrast, a thread pool reuses a fixed number of threads, reducing the cost of thread creation and improving performance, stability, and efficiency.
  - This is why the thread pool server shows lower response time, higher throughput, and more consistent behavior.
 
+#### 📊 Overall Performance Comparison
+
+| Metric            | Single Threaded        | Multi Threaded         | Thread Pool            |
+|------------------|-----------------------|------------------------|------------------------|
+| Request Handling | One at a time         | Multiple (concurrent)  | Multiple (controlled)  |
+| Response Time    | High                  | Moderate               | Low                    |
+| Throughput       | Low                   | High                   | Very High              |
+| Stability        | Low (with delay)      | Moderate               | High                   |
+| Resource Usage   | Low                   | High                   | Optimized              |
+| Scalability      | Poor                  | Good                   | Very Good              |
+| Performance      | Weak                  | Good                   | Best                   |
+
+📌 Summary:
+The single-threaded server is simple but inefficient under load.  
+The multi-threaded server improves performance by handling multiple requests concurrently.  
+The thread pool-based server further optimizes performance by managing threads efficiently, resulting in better stability and scalability.
+
 
