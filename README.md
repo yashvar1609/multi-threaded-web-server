@@ -65,7 +65,7 @@ Some errors/timeouts were observed in the single-threaded implementation under h
 ![Aggregate Report](https://github.com/yashvar1609/multi-threaded-web-server/blob/main/screenshots/single-threaded/delay-aggregate.png)
 *Aggregate Report – Single Threaded (With Delay)*
 
-![Graph](https://github.com/yashvar1609/multi-threaded-web-server/commit/eb5a5c1d3eef46589531821bac7bda38a99eb58e)
+![Graph](https://github.com/yashvar1609/multi-threaded-web-server/blob/main/screenshots/single-threaded/delay-graph.png)
 *Response Time Graph – Single Threaded (With Delay)*
 
 📌 Observation:
