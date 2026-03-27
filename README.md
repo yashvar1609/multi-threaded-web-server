@@ -104,13 +104,17 @@ The multi-threaded server handles multiple client requests concurrently, signifi
 
 📌 Observation:
 The thread pool-based server efficiently manages a fixed number of threads, reducing overhead from frequent thread creation. This results in stable performance and better resource utilization under concurrent requests.
-#### 📊 Multi-Threaded vs Thread Pool Comparison
+## 📊 Multi-Threaded vs Thread Pool (Simple Explanation)
 
-| Metric              | Multi-Threaded (No Pool)        | Thread Pool-Based Server       |
-|--------------------|--------------------------------|-------------------------------|
-| Thread Handling    | New thread per request         | Fixed threads reused          |
-| Resource Usage     | Higher (more overhead)         | Optimized (controlled usage)  |
-| Response Time      | Good                           | Better                        |
-| Throughput         | High                           | More stable                   |
-| Scalability        | Good                           | Very Good                     |
-| Stability          | Moderate under heavy load      | High and consistent           |
+| Metric            | Multi-Threaded Server                | Thread Pool Server                     |
+|------------------|------------------------------------|----------------------------------------|
+| Working Style    | Creates a new thread for each request | Reuses a fixed number of threads       |
+| Average Time     | ~3259 ms (slower)                  | ~1003 ms (faster)                      |
+| Median Time      | ~3014 ms                           | ~1003 ms                               |
+| Throughput       | ~573 requests/min                  | ~1007 requests/min                     |
+| Stability        | Less stable (high variation)       | Very stable (low variation)            |
+| Deviation        | High (1439 → inconsistent)         | Very low (1 → consistent)              |
+| Resource Usage   | High (many threads created)        | Optimized (threads reused)             |
+| Performance      | Good                               | Excellent                              |
+
+
