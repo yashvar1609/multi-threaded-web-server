@@ -70,3 +70,13 @@ Some errors/timeouts were observed in the single-threaded implementation under h
 
 📌 Observation:
 The single-threaded server processes one request at a time. When delay is introduced, response time increases significantly and may lead to timeouts under load.
+
+#### 📊 Single Threaded Performance Comparison
+
+| Metric              | Without Delay        | With Delay              |
+|--------------------|--------------------|------------------------|
+| Request Handling   | Sequential          | Sequential             |
+| Response Time      | Lower               | Significantly Higher   |
+| Throughput         | Better              | Reduced                |
+| Errors/Timeouts    | Minimal             | May Occur              |
+| Overall Performance| Acceptable          | Poor under load        |
