@@ -1,4 +1,4 @@
-# multi-threaded-web-server
+# 🚀 Java Web Server Performance Analysis
 ## 📌 Description
 This project implements a Java-based web server using three different approaches:
 - Single-threaded server
