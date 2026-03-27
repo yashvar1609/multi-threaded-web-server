@@ -104,7 +104,7 @@ The multi-threaded server handles multiple client requests concurrently, signifi
 
 📌 Observation:
 The thread pool-based server efficiently manages a fixed number of threads, reducing overhead from frequent thread creation. This results in stable performance and better resource utilization under concurrent requests.
-## 📊 Multi-Threaded vs Thread Pool (Simple Explanation)
+#### 📊 Multi-Threaded vs Thread Pool (Simple Explanation)
 
 | Metric            | Multi-Threaded Server                | Thread Pool Server                     |
 |------------------|------------------------------------|----------------------------------------|
@@ -116,5 +116,10 @@ The thread pool-based server efficiently manages a fixed number of threads, redu
 | Deviation        | High (1439 → inconsistent)         | Very low (1 → consistent)              |
 | Resource Usage   | High (many threads created)        | Optimized (threads reused)             |
 | Performance      | Good                               | Excellent                              |
+
+📌 Explanation:
+- In a multi-threaded server, a new thread is created for every incoming request, which increases overhead and reduces performance under heavy load.
+- In contrast, a thread pool reuses a fixed number of threads, reducing the cost of thread creation and improving performance, stability, and efficiency.
+ - This is why the thread pool server shows lower response time, higher throughput, and more consistent behavior.
 
 
