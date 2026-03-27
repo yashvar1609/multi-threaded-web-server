@@ -139,4 +139,20 @@ The single-threaded server is simple but inefficient under load.
 The multi-threaded server improves performance by handling multiple requests concurrently.  
 The thread pool-based server further optimizes performance by managing threads efficiently, resulting in better stability and scalability.
 
+## 📚 Key Learnings
 
+- Understood how client-server communication works using Java sockets  
+- Learned the difference between single-threaded and multi-threaded request handling  
+- Gained practical knowledge of thread creation and concurrency in Java  
+- Explored how thread pools improve performance by reusing threads  
+- Learned to perform performance testing using Apache JMeter  
+- Analyzed how response time, throughput, and delay affect server performance  
+## 🎯 Conclusion
+
+This project demonstrates how different server architectures impact performance and efficiency in handling client requests.
+
+The single-threaded server is simple but becomes inefficient under load as it processes one request at a time. The multi-threaded server improves performance by handling multiple requests concurrently, but introduces overhead due to frequent thread creation.
+
+The thread pool-based server provides the most efficient solution by reusing a fixed number of threads, reducing overhead and ensuring better performance, stability, and scalability under high load conditions.
+
+Overall, the project highlights the importance of efficient thread management in building scalable and high-performance server applications.
